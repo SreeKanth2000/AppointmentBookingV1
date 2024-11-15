@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookPro - Premium Appointment Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-calendar-check-fill me-2"></i>BookPro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth/login.html">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="auth/register.html">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax and Floating Elements -->
+    <header class="hero">
+        <div class="particles" id="particles-js"></div>
+        <div class="video-wrapper">
+            <video autoplay muted loop class="blur-video">
+                <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+            </video>
+            <div class="overlay gradient-overlay"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-item calendar" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-calendar-check"></i>
+            </div>
+            <div class="float-item bell" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-bell"></i>
+            </div>
+            <div class="float-item graph" data-aos="fade-up" data-aos-delay="600">
+                <i class="bi bi-graph-up"></i>
+            </div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-badge mb-3">
+                        <span class="badge bg-primary-soft">New Feature</span>
+                        <span class="ms-2">AI-Powered Scheduling</span>
+                    </div>
+                    <h1 class="display-3 fw-bold text-gradient mb-4">
+                        Transform Your <br>Booking Experience
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Elevate your business with our premium scheduling platform. 
+                        Smart automation meets elegant design.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="auth/register.html" class="btn btn-gradient btn-lg me-3 pulse-button">
+                            Start Free Trial
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#demo" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-play-circle me-2"></i>
+                            Watch Demo
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5">
+                        <div class="row g-4">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3>10K+</h3>
+                                    <p>Active Users</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3>99.9%</h3>
+                                    <p>Uptime</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3>4.9/5</h3>
+                                    <p>User Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="../assets/images/dashboard-preview.png" alt="Dashboard Preview" class="img-fluid floating">
+                        <div class="hero-shape-1"></div>
+                        <div class="hero-shape-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands Section -->
+        <div class="brands-section">
+            <div class="container">
+                <p class="text-center text-white-50 mb-4">Trusted by leading companies</p>
+                <div class="row align-items-center justify-content-center g-4">
+                    <div class="col-4 col-md-2">
+                        <img src="assets/images/brand1.png" alt="Brand" class="img-fluid">
+                    </div>
+                    <!-- Add more brand logos -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4">How It Works</h2>
+                <p class="text-muted">Three simple steps to transform your booking process</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <span class="process-number">1</span>
+                            <i class="bi bi-calendar-plus"></i>
+                        </div>
+                        <h3>Set Your Schedule</h3>
+                        <p>Define your availability and services with our intuitive interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <span class="process-number">2</span>
+                            <i class="bi bi-share"></i>
+                        </div>
+                        <h3>Share Your Link</h3>
+                        <p>Distribute your personalized booking link to clients.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <span class="process-number">3</span>
+                            <i class="bi bi-check2-circle"></i>
+                        </div>
+                        <h3>Get Booked</h3>
+                        <p>Receive bookings and automatic confirmations instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Enhanced) -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4">Premium Features</h2>
+                <p class="text-muted">Everything you need for professional appointment management</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon premium">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h3>Smart Scheduling</h3>
+                        <p>AI-powered scheduling that learns from your preferences and optimizes your calendar.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Intelligent time slots</li>
+                            <li><i class="bi bi-check2"></i> Automatic timezone detection</li>
+                            <li><i class="bi bi-check2"></i> Buffer time management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon premium">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h3>Smart Scheduling</h3>
+                        <p>AI-powered scheduling that learns from your preferences and optimizes your calendar.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Intelligent time slots</li>
+                            <li><i class="bi bi-check2"></i> Automatic timezone detection</li>
+                            <li><i class="bi bi-check2"></i> Buffer time management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon premium">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h3>Smart Scheduling</h3>
+                        <p>AI-powered scheduling that learns from your preferences and optimizes your calendar.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Intelligent time slots</li>
+                            <li><i class="bi bi-check2"></i> Automatic timezone detection</li>
+                            <li><i class="bi bi-check2"></i> Buffer time management</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more feature cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4">What Our Users Say</h2>
+                <p class="text-muted">Join thousands of satisfied customers</p>
+            </div>
+            <div class="testimonial-slider" data-aos="fade-up">
+                <!-- Testimonial cards will be added dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5 bg-gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h2 class="text-white mb-3">Ready to transform your booking experience?</h2>
+                    <p class="text-white-50 mb-lg-0">Start your 14-day free trial. No credit card required.</p>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <a href="auth/register.html" class="btn btn-light btn-lg">
+                        Get Started Free
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the sections remain the same -->
+    
+     <!-- Footer -->
+     <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>BookPro</h4>
+                    <p>Making scheduling effortless</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="../pages/auth/login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope"></i> contact@bookpro.com</li>
+                        <li><i class="bi bi-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="bi bi-geo-alt"></i> 123 Booking Street, NY 10001</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 BookPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
